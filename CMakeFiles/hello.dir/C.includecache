@@ -9,4 +9,8 @@
 /home/tmurray/proj/rpn-stack-lib/src/hello.c
 stdio.h
 -
+rpn-stack-lib.h
+/home/tmurray/proj/rpn-stack-lib/src/rpn-stack-lib.h
+
+/home/tmurray/proj/rpn-stack-lib/src/rpn-stack-lib.h
 

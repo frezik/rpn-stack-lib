@@ -1,9 +1,11 @@
 #include <stdio.h>
+#include "rpn-stack-lib.h"
 
 /* Function int main(int argc, char **argv) {{{ */
 int main(int argc, char **argv)
 {
     printf( "Hello, world\n" );
+    printf( "Version: %d.%d\n", RPN_STACK_LIB_VERSION_MAJOR, RPN_STACK_LIB_VERSION_MINOR );
 
 	return 0;
 } /* }}} */
