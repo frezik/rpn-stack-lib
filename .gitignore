@@ -1,1 +1,3 @@
 rpn-stack-lib.h
+*.o
+CMakeFiles
