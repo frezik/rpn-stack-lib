@@ -1,5 +1,10 @@
 rpn-stack-lib.h
 *.o
 CMakeFiles
+CMakeCache.txt
+*.cmake
 Makefile
 src/main
+cmake
+Testing
+tests/check
