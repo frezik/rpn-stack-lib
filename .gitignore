@@ -1,3 +1,5 @@
 rpn-stack-lib.h
 *.o
 CMakeFiles
+Makefile
+src/main

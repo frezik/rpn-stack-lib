@@ -1,2 +1,12 @@
+#ifndef RPN_STACK_LIB_H
+#define RPN_STACK_LIB_H
+
+
 #define RPN_STACK_LIB_VERSION_MAJOR @rpn-stack-lib_VERSION_MAJOR@
 #define RPN_STACK_LIB_VERSION_MINOR @rpn-stack-lib_VERSION_MINOR@
+
+
+void hello( void );
+
+
+#endif /* RPN_STACK_LIB_H */
