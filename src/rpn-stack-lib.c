@@ -2,14 +2,14 @@
 #include "rpn-stack-lib.h"
 
 
-void hello( void )
+struct rpn_stack_node* rpn_create_new_stack( int data )
 {
-    printf( "Hello, world\n" );
-    printf( 
-        "Version: %d.%d\n"
-        ,RPN_STACK_LIB_VERSION_MAJOR
-        ,RPN_STACK_LIB_VERSION_MINOR
-    );
+    struct rpn_stack_node* node = (struct rpn_stack_node*)
+        malloc( sizeof( struct rpn_stack_node
+    ) );
+    node->data = data;
+    node->next = NULL;
+    return node;
 }
 
 

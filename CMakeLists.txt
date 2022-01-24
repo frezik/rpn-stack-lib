@@ -29,3 +29,5 @@ add_subdirectory( tests )
 
 enable_testing()
 add_test( NAME check COMMAND check )
+add_test( NAME sanity COMMAND sanity )
+add_test( NAME make_stack COMMAND make_stack )

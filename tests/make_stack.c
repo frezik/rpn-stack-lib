@@ -3,9 +3,10 @@
 #include "rpn-stack-lib.h"
 
 
-START_TEST( load )
+START_TEST( make_stack )
 {
-    ck_assert_msg( 1, "Tests can be built" );
+    struct rpn_stack_node* root = rpn_create_new_stack( 0 );
+    ck_assert_msg( root, "Got a stack" );
 }
 END_TEST
 
@@ -20,7 +21,7 @@ Suite * make_suite( void )
     /* Core test case */
     tc_core = tcase_create( "Core" );
 
-    tcase_add_test( tc_core, load );
+    tcase_add_test( tc_core, make_stack );
     suite_add_tcase( s, tc_core );
 
     return s;

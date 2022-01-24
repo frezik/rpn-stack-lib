@@ -5,6 +5,10 @@ CMakeCache.txt
 *.cmake
 Makefile
 src/main
+src/librpn-stack-lib.a
+src/librpn-stack-lib.so
 cmake
 Testing
 tests/check
+tests/make_stack
+tests/sanity

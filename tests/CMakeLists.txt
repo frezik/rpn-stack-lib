@@ -10,9 +10,10 @@ find_package(Check REQUIRED)
 include_directories(${CHECK_INCLUDE_DIRS})
 link_directories(${CHECK_LIBRARY_DIRS})
 
-set(TEST_SOURCES
-  check.c
-)
 
-add_executable( check ${TEST_SOURCES})
+add_executable( check check.c )
+add_executable( sanity sanity.c )
+add_executable( make_stack make_stack.c )
 target_link_libraries( check rpn-stack-lib ${CHECK_LIBRARIES} )
+target_link_libraries( sanity rpn-stack-lib ${CHECK_LIBRARIES} )
+target_link_libraries( make_stack rpn-stack-lib ${CHECK_LIBRARIES} )

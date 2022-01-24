@@ -6,7 +6,13 @@
 #define RPN_STACK_LIB_VERSION_MINOR @rpn-stack-lib_VERSION_MINOR@
 
 
-void hello( void );
+struct rpn_stack_node
+{
+    int data;
+    struct StackNode* next;
+};
+
+struct rpn_stack_node* rpn_create_new_stack( int data );
 
 
 #endif /* RPN_STACK_LIB_H */

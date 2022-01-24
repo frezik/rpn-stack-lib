@@ -11,7 +11,7 @@ set(HEADERS
   rpn-stack-lib.h
 )
 
-add_library(rpn-stack-lib STATIC ${LIB_SOURCES} ${HEADERS})
+add_library(rpn-stack-lib SHARED ${LIB_SOURCES} ${HEADERS})
 
 add_executable(main ${HEADERS} ${MAIN_SOURCES})
 target_link_libraries(main rpn-stack-lib)
